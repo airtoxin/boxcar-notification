@@ -1,0 +1,32 @@
+{
+  "name": "boxcar-notification",
+  "version": "0.0.1",
+  "description": "boxcar api notification library",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel -o build.js boxcar-notification.js",
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airtoxin/boxcar-notification.git"
+  },
+  "keywords": [
+    "boxcar",
+    "notify",
+    "notification",
+    "push"
+  ],
+  "author": "airtoxin <airtoxin@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airtoxin/boxcar-notification/issues"
+  },
+  "homepage": "https://github.com/airtoxin/boxcar-notification#readme",
+  "devDependencies": {
+    "babel": "^5.8.29"
+  },
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
