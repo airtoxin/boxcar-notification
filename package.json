@@ -2,10 +2,11 @@
   "name": "boxcar-notification",
   "version": "0.0.1",
   "description": "boxcar api notification library",
-  "main": "index.js",
+  "main": "build.js",
   "scripts": {
     "start": "babel -o build.js boxcar-notification.js",
-    "test": "mocha --recursive test"
+    "test": "mocha --recursive test",
+    "prepublish": "npm start"
   },
   "repository": {
     "type": "git",
