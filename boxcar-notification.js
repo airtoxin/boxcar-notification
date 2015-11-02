@@ -1,4 +1,5 @@
 import request from 'request';
+import Promise from 'promise';
 
 export default class BoxcarNotification {
     constructor(userCredentials) {
