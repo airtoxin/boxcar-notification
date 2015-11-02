@@ -9,3 +9,17 @@ describe('constructor', () => {
         done();
     });
 });
+
+describe('static properties', () => {
+    it('should have sounds property', (done) => {
+        let validSounds = BoxcarNotification.VALID_SOUNDS;
+        assert.ok(validSounds.length > 0);
+        done();
+    });
+
+    it('should have api url property', (done) => {
+        let apiUrl = BoxcarNotification.API_URL;
+        assert.ok((/^https:\/\/.*boxcar.*$/).test(apiUrl));
+        done();
+    });
+});
