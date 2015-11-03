@@ -1,6 +1,6 @@
 {
   "name": "boxcar-notification",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "boxcar api notification library",
   "main": "build.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "babel": "^5.8.29"
   },
   "dependencies": {
+    "promise": "^7.0.4",
     "request": "^2.65.0"
   }
 }
