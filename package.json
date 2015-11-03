@@ -8,6 +8,9 @@
     "test": "npm start && mocha --compilers js:babel/register --recursive test",
     "prepublish": "npm start"
   },
+  "engines": {
+    "node": ">=0.12"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/airtoxin/boxcar-notification.git"
