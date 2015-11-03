@@ -5,7 +5,7 @@
   "main": "build.js",
   "scripts": {
     "start": "babel -o build.js boxcar-notification.js",
-    "test": "mocha --recursive test",
+    "test": "npm start && mocha --compilers js:babel/register --recursive test",
     "prepublish": "npm start"
   },
   "repository": {
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/airtoxin/boxcar-notification#readme",
   "devDependencies": {
-    "babel": "^5.8.29"
+    "babel": "^5.8.29",
+    "mocha": "^2.3.3"
   },
   "dependencies": {
     "promise": "^7.0.4",
