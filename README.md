@@ -1,4 +1,4 @@
-# boxcar-notification
+# boxcar-notification [![Build Status](https://travis-ci.org/airtoxin/boxcar-notification.svg)](https://travis-ci.org/airtoxin/boxcar-notification)
 boxcar api notification library
 
 ## Install
