@@ -2,9 +2,9 @@
   "name": "boxcar-notification",
   "version": "0.1.0",
   "description": "boxcar api notification library",
-  "main": "build.js",
+  "main": "dist/build.js",
   "scripts": {
-    "start": "babel -o build.js boxcar-notification.js",
+    "start": "babel -o dist/build.js src/",
     "test": "npm start && mocha --compilers js:babel/register --recursive test",
     "prepublish": "npm start"
   },
