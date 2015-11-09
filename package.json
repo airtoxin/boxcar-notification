@@ -6,6 +6,7 @@
   "scripts": {
     "start": "babel -o dist/build.js src/",
     "test": "npm start && mocha --compilers js:babel/register --recursive test",
+    "doc": "esdoc -c esdoc.json",
     "prepublish": "npm start"
   },
   "engines": {
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/airtoxin/boxcar-notification#readme",
   "devDependencies": {
     "babel": "^5.8.29",
+    "esdoc": "^0.4.3",
     "mocha": "^2.3.3"
   },
   "dependencies": {
