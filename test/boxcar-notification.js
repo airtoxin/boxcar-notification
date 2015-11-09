@@ -27,7 +27,7 @@ describe('static properties', () => {
 });
 
 describe('send()', function () {
-    this.timeout(10000);
+    this.timeout(300000);
     let options;
     let bn;
     let notAuthorizedResponse = '{"Response":"Not Authorized"}';
