@@ -2,9 +2,16 @@ import request from 'request';
 import Promise from 'promise';
 
 export default class BoxcarNotification {
+    /**
+     * @param {string} userCredentials - your boxcar's API token
+     */
     constructor(userCredentials) {
         this.userCredentials = userCredentials;
     }
+
+    /**
+     * @property {string[]} VALID_SOUNDS - selectable sounds list
+     */
     static get VALID_SOUNDS() {
         return [
             'beep-crisp',
@@ -37,7 +44,22 @@ export default class BoxcarNotification {
             'up'
         ];
     }
+
+    /**
+     * @property {string} API_URL - API endpoint url
+     */
     static get API_URL() {return 'https://new.boxcar.io/api/notifications';}
+
+    /**
+     * send notification request.
+     * @param {object} options - notification options
+     * @param {string} options.title - [required] notification title
+     * @param {string} options.longMessage - [required] notification message body
+     * @param {string} options.sound - notification sound
+     * @param {string} options.sourceName - notification source
+     * @param {string} options.iconUrl - notification icon url
+     * @return {Promise<string, string>} - response body or error message
+     */
     send (options) {
         return new Promise((resolve, reject) => {
             if (!options.title) return reject('title required');
