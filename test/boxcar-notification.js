@@ -1,5 +1,5 @@
 import assert from 'assert';
-import BoxcarNotification from '../dist/build.js';
+import BoxcarNotification from '../dist/boxcar-notification.js';
 
 let fail = () => {assert.ok(0);};
 
