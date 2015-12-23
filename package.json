@@ -1,6 +1,6 @@
 {
   "name": "boxcar-notification",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "boxcar api notification library",
   "main": "dist/boxcar-notification.js",
   "scripts": {
